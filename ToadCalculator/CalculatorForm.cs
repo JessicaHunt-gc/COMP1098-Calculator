@@ -12,6 +12,7 @@ namespace ToadCalculator
 {
     public partial class CalculatorForm : Form
     {
+        public string CurrentDisplay = "0";
         public CalculatorForm()
         {
             InitializeComponent();
@@ -19,7 +20,8 @@ namespace ToadCalculator
 
         private void CalculatorForm_Load(object sender, EventArgs e)
         {
-
+            int i = 0;
+            this.FormBorderStyle = FormBorderStyle.FixedToolWindow;
         }
 
         private void button3_Click(object sender, EventArgs e)
